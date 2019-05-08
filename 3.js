@@ -4,6 +4,6 @@ const os = require('os');
 
 const homedir = os.homedir();
 
-const CodeDir = path.resolve(homedir, 'Library/Application\ Support/Code/User/settings.json');
+const ConfigPath = path.resolve(homedir, 'Library/Application\ Support/Code/User/settings.json');
 
-console.log(fs.readFileSync(CodeDir).toString());
+console.log(fs.readFileSync(ConfigPath).toString());
